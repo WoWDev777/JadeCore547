@@ -65,7 +65,7 @@ void AddSC_npc_toy();
 void AddSC_anticheat_commandscript();
 void AddSC_account_commandscript();
 void AddSC_achievement_commandscript();
-void AddSC_ahbot_commandscript();
+//void AddSC_ahbot_commandscript();
 void AddSC_ban_commandscript();
 void AddSC_bf_commandscript();
 void AddSC_cast_commandscript();
@@ -877,7 +877,7 @@ void AddSC_celestial_challenge();
 /* -------------------------------- */
 
 // Generic Scripts
-void AddSC_timeless_isle(); // island (global), partially includes celestial npcs 
+/*void AddSC_timeless_isle(); // island (global), partially includes celestial npcs 
 
 // Ordos
 void AddSC_boss_ordos();
@@ -919,7 +919,7 @@ void AddSC_rare_mob_urdur_the_cauterizer();
 void AddSC_rare_mob_watcher_osu();
 void AddSC_rare_mob_zesqua();
 void AddSC_rare_mob_zhu_gon_the_sour();
-void AddSC_rare_mob_archereus_of_flame();
+void AddSC_rare_mob_archereus_of_flame();*/
 
 
 /* -------------------------------- */
@@ -1025,7 +1025,7 @@ void AddCommandScripts()
     AddSC_anticheat_commandscript();
     AddSC_account_commandscript();
     AddSC_achievement_commandscript();
-    AddSC_ahbot_commandscript();
+    //AddSC_ahbot_commandscript();
     AddSC_ban_commandscript();
     AddSC_bf_commandscript();
     AddSC_cast_commandscript();
@@ -1860,7 +1860,7 @@ void AddPandarieScripts()
     /* -------------------------------- */
     
     // Generic Scripts
-	AddSC_timeless_isle(); // island (global), partially includes celestial npcs 
+/*	AddSC_timeless_isle(); // island (global), partially includes celestial npcs 
     
     // Ordos
 	AddSC_boss_ordos();
@@ -1902,7 +1902,7 @@ void AddPandarieScripts()
     AddSC_rare_mob_watcher_osu();
     AddSC_rare_mob_zesqua();
     AddSC_rare_mob_zhu_gon_the_sour();
-    AddSC_rare_mob_archereus_of_flame();
+    AddSC_rare_mob_archereus_of_flame();*/
     
     /* -------------------------------- */
 #endif
