@@ -69,7 +69,7 @@ void usage(const char *prog)
 }
 
 // Launch the auth server
-extern int main(int argc, char **argv)
+extern int main(int argc, char** argv)
 {
     // Command line parsing to get the configuration file name
     char const* cfg_file = _TRINITY_REALM_CONFIG;
