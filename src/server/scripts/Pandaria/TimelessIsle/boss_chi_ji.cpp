@@ -432,9 +432,9 @@ class spell_chi_ji_beacon_of_hope : public SpellScriptLoader
     public:
         spell_chi_ji_beacon_of_hope() : SpellScriptLoader("spell_chi_ji_beacon_of_hope") { }
 
-        class spell_chi_ji_beacon_of_hope_Spellcript : public SpellScript
+        class spell_chi_ji_beacon_of_hope_SpellScript : public SpellScript
         {
-            PrepareSpellScript(spell_chi_ji_beacon_of_hope_Spellcript);
+            PrepareSpellScript(spell_chi_ji_beacon_of_hope_SpellScript);
 
             void DeselectNonPlayer(std::list<WorldObject*>& targets)
             {
@@ -459,13 +459,13 @@ class spell_chi_ji_beacon_of_hope : public SpellScriptLoader
 
             void Register()
             {
-                OnObjectAreaTargetSelect += SpellObjectAreaTargetSelectFn(spell_chi_ji_beacon_of_hope_Spellcript::DeselectNonPlayer, EFFECT_0, TARGET_UNIT_SRC_AREA_ENTRY);
+                OnObjectAreaTargetSelect += SpellObjectAreaTargetSelectFn(spell_chi_ji_beacon_of_hope_SpellScript::DeselectNonPlayer, EFFECT_0, TARGET_UNIT_SRC_AREA_ENTRY);
             }
         };
 
         SpellScript* GetSpellScript() const
         {
-            return new spell_chi_ji_beacon_of_hope_Spellcript();
+            return new spell_chi_ji_beacon_of_hope_SpellScript();
         }
 };
 
