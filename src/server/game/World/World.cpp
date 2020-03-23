@@ -2020,9 +2020,6 @@ void World::SetInitialWorldSettings()
     // Delete all characters which have been deleted X days before
     Player::DeleteOldCharacters();
 
-	sLog->outInfo(LOG_FILTER_SERVER_LOADING, "Initialize AuctionHouseBot...");
-	sAuctionBot->Initialize();
-
     // Delete all custom channels which haven't been used for PreserveCustomChannelDuration days.
     Channel::CleanOldChannelsInDB();
 
@@ -2323,13 +2320,6 @@ void World::Update(uint32 diff)
     }
 
     uint32 diffTime = getMSTime();
-    
-	/// <li> Handle AHBot operations
-	if (m_timers[WUPDATE_AHBOT].Passed())
-	{
-		sAuctionBot->Update();
-		m_timers[WUPDATE_AHBOT].Reset();
-	}
 
     /// <li> Handle session updates when the timer has passed
     RecordTimeDiff(NULL);
